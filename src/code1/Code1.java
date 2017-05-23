@@ -139,8 +139,31 @@ public class Code1 {
          }
          
          } else { var++;
-         System.out.println("Yes or no, no other input!");
-             newTask(var); 
+            if (var==1) {
+           System.out.println("Yes or no, no other input!");
+              newTask(var);
+            }
+            if (var==2) {
+             System.out.println("Yes or no, it isn't that hard.");
+             newTask(var);
+            }
+            if (var==3) {
+             System.out.println("Really? You are testing my patience...");
+             newTask(var);
+            }
+            if (var==4) {
+                System.out.println("Enough! I'm done!");
+                for (int i=0;i<15;i++) {
+                    String space=input.next();
+                    System.out.println(space);
+                }
+                System.out.println("Still here? Fine, final chance.");
+                newTask(var);
+            }
+            if (var>4) {
+                System.out.println("Stop abusing the system!");
+            } 
+              
        }
     }
 }
