@@ -129,17 +129,19 @@ public class Code1 {
         String ans = input.next();
           char answer = ans.charAt(0);
          int yn = (int) answer;
-         if (yn==121||yn==89) {
+         if (yn==121||yn==89||yn==110||yn==78) {
+            if (yn==121||yn==89) {
              System.out.println("Understood, rebooting startTask");
              startTask();
+             }
+            if (yn==110||yn==78) {
+           System.out.println("Okey... :("); 
          }
-         if (yn==110||yn==78) {
-           System.out.println("Okey... :(");
+         
+         } else {
+         System.out.println("Yes or no, no other input!");
+             newTask(); 
        }
-         if (yn!=110&&yn!=78&&yn!=121&&yn!=89) {
-             System.out.println("Yes or no, no other input!");
-             newTask();
-         }
     }
 }
 
