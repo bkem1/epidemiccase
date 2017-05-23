@@ -103,7 +103,7 @@ public class Code1 {
         System.out.println("done!");
         } else {System.out.println("Error! Invalid input");}
         System.out.println();
-        newTask();
+        newTask(0);
     }
     public static void loopTest(){
         System.out.println("Activating loopTest");
@@ -123,7 +123,7 @@ public class Code1 {
          }
          return facul*fac(facul-1);
     }
-    public static void newTask() {
+    public static void newTask(int var) {
         Scanner input = new Scanner(System.in);
         System.out.println("Another task? y/n");
         String ans = input.next();
@@ -138,9 +138,9 @@ public class Code1 {
            System.out.println("Okey... :("); 
          }
          
-         } else {
+         } else { var++;
          System.out.println("Yes or no, no other input!");
-             newTask(); 
+             newTask(var); 
        }
     }
 }
