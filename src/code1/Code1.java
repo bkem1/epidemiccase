@@ -51,11 +51,11 @@ public class Code1 {
     */
         
         
-        Scanner input = new Scanner(System.in);
+      /*  Scanner input = new Scanner(System.in);
         String command = input.next();
        int task = Integer.parseInt(command);
         System.out.println(task);
-        
+        */
         welcomeNote();
         System.out.println("Enter task");
         startTask();
